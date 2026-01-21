@@ -101,6 +101,31 @@ sudo service apache2 restart
 
 ### 9️⃣ **Crear Virtual Host**
 
+```bash
+sudo nano /etc/apache2/sites-available/MI_DOMINIO.conf 
+```
+
+**Ejemplo:**
+
+```bash
+<VirtualHost *:80>
+ServerName MI_DOMINIO.com
+ServerAlias www.MI_DOMINIO.com
+DocumentRoot /var/www/MI_DOMINIO
+
+
+<Directory /var/www/MI_DOMINIO>
+AllowOverride All
+Require all granted
+</Directory>
+
+
+ErrorLog ${APACHE_LOG_DIR}/MI_DOMINIO_error.log
+CustomLog ${APACHE_LOG_DIR}/MI_Dominio_access.log combined
+</VirtualHost> 
+```
+
+
 
 
 
