@@ -1,3 +1,13 @@
+# 1️⃣ Primer acceso como root
+
+Entramos al servidor como **root**
+
 ```bash
-hola
+su -
 ```
+
+Actualizamos el sistema 
+
+
+
+
