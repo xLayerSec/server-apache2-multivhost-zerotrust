@@ -12,6 +12,8 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 - Dominios activos
 - Cuenta cloudflare
 
+## 📟 Comandos
+
  
 Entramos al servidor como **root**
 
