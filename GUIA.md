@@ -24,7 +24,7 @@ su -
 **Actualizamos el sistema** 
 
 ```bash
-apt update && apt upgrade -y
+apt update | apt upgrade -y
 ```
 
 
