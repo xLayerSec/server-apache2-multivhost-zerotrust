@@ -138,7 +138,7 @@ sudo chmod -R 755 /var/www/MI_DOMINIO
 ```bash
 echo "MI_DOMINIO Funcionando" | sudo tee /var/www/MI_DOMINIO/index.html
 ```
-#### 1️⃣1️⃣ Habilitar el sitio
+### 1️⃣1️⃣ **Habilitar el sitio**
 
 ```bash
 sudo a2ensite  MI_DOMINIO.conf
@@ -154,6 +154,18 @@ sudo systemctl reload apache2
 ```bash
 curl -H "Host: MI_DOMINIO" http://127.0.0.1
 ```
+
+### 1️⃣2️⃣ **Instalar Cloudflared desde github**
+
+
+```bash
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+
+chmod +x cloudflared-linux-amd64
+
+sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
+```
+
 
 
 
