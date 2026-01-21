@@ -4,6 +4,8 @@ En esta guia se documenta el proceso completo para desplegar un servidor apache2
 en Debian 12 capaz de servir multiples dominios utilizando VirtualHost, exponiendolos
 a Internet mediante un solo tunnel de Cloudflared Zero Trust 
 
+----
+
 ### ⚙️ Requisitos 
 
 - Servidor dedicado o VM
@@ -11,6 +13,8 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 - Acceso root
 - Dominios activos
 - Cuenta cloudflare
+
+  ----
 
 ## 📟 Comandos
 
@@ -27,7 +31,9 @@ su -
 apt update | apt upgrade -y
 ```
 
-2️⃣ **Instalacion de sudo**
+----
+
+###2️⃣ **Instalacion de sudo**
 
 ```bash
 apt install sudo -y
