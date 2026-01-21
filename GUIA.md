@@ -1,4 +1,4 @@
-#📙 Guia paso a paso - Apache2 + Multiples dominios + Cloudflared
+# 📙 Guia paso a paso - Apache2 + Multiples dominios + Cloudflared
 
 Entramos al servidor como **root**
 
