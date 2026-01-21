@@ -72,7 +72,7 @@ sudo apt install apache2 -y
 
 ```bash
 sudo service apache2 start
-sudo service apache2 enable
+sudo systemctl enable apache2
 ```
 
 **Verificamos que este corriendo**
