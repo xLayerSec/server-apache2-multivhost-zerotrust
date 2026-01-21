@@ -247,7 +247,9 @@ Usuario → Cloudflare → Tunnel → Apache (127.0.0.1)
 
 
 📌 Autor: xLayerSec
+
 📌 Sistema: Debian 12
+
 📌 Modelo: Zero Trust Architecture
 
 
