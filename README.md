@@ -1,4 +1,4 @@
-# Servidor Apache2 en Debian 12 con Cloudflared Zero Trust (Multi-dominio)
+# 🖥️ Servidor Apache2 en Debian 12 con Cloudflared Zero Trust (Multi-dominio)
 
 Esta guia documenta paso a paso como levantar un servidor apache2 en debian 
 12 (sin interfaz grafica) y exponer multiples dominios a internet usando 
