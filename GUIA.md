@@ -34,7 +34,7 @@ apt update | apt upgrade -y
 
 ----
 
-###2️⃣ **Instalacion de sudo**
+### 2️⃣ **Instalacion de sudo**
 
 ```bash
 apt install sudo -y
@@ -51,7 +51,7 @@ usermod -aG sudo TU_USUARIO
 exit
 ```
 
-3️⃣ **Acceso por SSH**
+### 3️⃣ **Acceso por SSH**
 
 
 
