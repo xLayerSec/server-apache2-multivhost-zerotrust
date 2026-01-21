@@ -142,6 +142,10 @@ echo "MI_DOMINIO Funcionando" | sudo tee /var/www/MI_DOMINIO/index.html
 
 ```bash
 sudo a2ensite  MI_DOMINIO.conf
+```
+
+```bash
+sudo a2dissite  000-default.conf
 sudo systemctl reload apache2
 ```
 
