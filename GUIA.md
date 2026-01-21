@@ -57,7 +57,7 @@ usermod -aG sudo TU_USUARIO
 ssh TU_USUARIO@IP_DEL_SERVIDOR 
 ```
 
-#### 4️⃣ **Instalacion de dependencias basicas**
+### 4️⃣ **Instalacion de dependencias basicas**
 
 **Sin ser root solo usaremos sudo con nuestro usuario normal**
 
