@@ -6,7 +6,7 @@ Esta guia documenta paso a paso como levantar un servidor apache2 en debian
 
 ## Requisitos previos:
 
-- **Debian 12 recien instalado (modo consola)
+- ** Debian 12 recien instalado (modo consola) **
 
 - **Acceso como root**
 
