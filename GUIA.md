@@ -224,6 +224,35 @@ service: http://127.0.0.1:80
 - service: http_status:404
 ```
 
+**Recargamos Apache2**
+
+```bash
+sudo service apache2 reload
+```
+### 1️⃣6️⃣ **Ejecutar Tunnel**
+
+```bash
+cloudflared tunnel run MI-TUNEL 
+```
+---
+
+## ✅ Resultado final
+
+✔ Apache2 escucha solo en 127.0.0.1 ✔ Puertos cerrados al exterior ✔ Cloudflare Zero Trust como único punto de acceso ✔ Múltiples dominios sirviéndose desde un solo servidor ✔ Esta arquitectura es ideal para entornos detras de CGNAT
+
+## 🔐 Arquitectura
+
+Usuario → Cloudflare → Tunnel → Apache (127.0.0.1)
+
+
+
+📌 Autor: xLayerSec
+📌 Sistema: Debian 12
+📌 Modelo: Zero Trust Architecture
+
+
+
+
 
 
 
