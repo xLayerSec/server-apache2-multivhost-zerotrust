@@ -121,7 +121,7 @@ Require all granted
 
 
 ErrorLog ${APACHE_LOG_DIR}/MI_DOMINIO_error.log
-CustomLog ${APACHE_LOG_DIR}/MI_Dominio_access.log combined
+CustomLog ${APACHE_LOG_DIR}/MI_DOMINIO_access.log combined
 </VirtualHost> 
 ```
 
