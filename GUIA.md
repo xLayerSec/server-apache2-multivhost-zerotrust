@@ -166,6 +166,19 @@ chmod +x cloudflared-linux-amd64
 sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
 ```
 
+**Verificar instalacion correcta**
+
+```bash
+cloudflared --version
+```
+
+### 1️⃣4️⃣ Login en Cloudflare
+
+```bash
+cloudflared tunnel login
+```
+Se abrirá una URL → seleccionar dominio → se descargará el certificado .pem.
+
 
 
 
