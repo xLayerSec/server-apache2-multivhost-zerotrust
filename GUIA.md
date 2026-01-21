@@ -81,6 +81,35 @@ sudo systemctl enable apache2
 sudo service apache2 status
 ```
 
+###  8️⃣ **Cerrar puertos y escuchar solo localhost**
+
+```bash
+sudo nano /etc/apache2/ports.conf
+```
+
+**Cambiar a**
+
+```bash
+Liten 127.0.0.1:80
+```
+
+**Reiniciamos apache2**
+
+```bash
+sudo service apache2 restart 
+```
+
+### 9️⃣ **Crear Virtual Host**
+
+
+
+
+
+
+
+
+
+
 
 
 
