@@ -125,6 +125,31 @@ CustomLog ${APACHE_LOG_DIR}/MI_Dominio_access.log combined
 </VirtualHost> 
 ```
 
+### 🔟 **Crear carpeta del sitio**
+
+```bash
+sudo mkdir -p /var/www/MI_DOMINIO
+sudo chown -R www-data:www-data /var/www/MI DOMINIO
+sudo chmod -R 755 /var/www/MI_DOMINIO
+```
+
+**Crear un Index de prueba**
+
+```bash
+echo "MI_DOMINIO Funcionando" | sudo tee /var/www/MI_DOMINIO/index.html
+```
+#### 1️⃣1️⃣ Habilitar el sitio
+
+```bash
+sudo a2ensite  MI_DOMINIO.conf
+sudo systemctl reload apache2
+```
+
+**Verificar VirtualHost con curl**
+
+```bash
+curl -H "Host: MI_DOMINIO" http://127.0.0.1
+```
 
 
 
