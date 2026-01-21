@@ -14,7 +14,7 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 - Dominios activos
 - Cuenta cloudflare
 
-  ----
+----
 
 ## 📟 Comandos
 
@@ -47,11 +47,11 @@ usermod -aG sudo TU_USUARIO
 ```
 **⚠️Cerrar sesion y volver a entrar para que los permisos se apliquen**
 
-```bash
-exit | exit
-```
+---
 
 ### 3️⃣ **Acceso por SSH**
+
+
 
 
 
