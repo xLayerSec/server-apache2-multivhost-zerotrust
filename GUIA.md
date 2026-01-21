@@ -15,7 +15,7 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 ## 📟 Comandos
 
  
-Entramos al servidor como **root**
+- 1️⃣ Entramos al servidor como **root**
 
 ```bash
 su -
