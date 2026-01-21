@@ -15,13 +15,17 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 ## 📟 Comandos
 
  
-- 1️⃣ Entramos al servidor como **root**
+1️⃣ **Primero acceso como root**
 
 ```bash
 su -
 ```
 
-Actualizamos el sistema 
+**Actualizamos el sistema** 
+
+```bash
+apt update && apt upgrade -y
+```
 
 
 
