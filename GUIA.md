@@ -129,7 +129,9 @@ CustomLog ${APACHE_LOG_DIR}/MI_DOMINIO_access.log combined
 
 ```bash
 sudo mkdir -p /var/www/MI_DOMINIO
+
 sudo chown -R www-data:www-data /var/www/MI DOMINIO
+
 sudo chmod -R 755 /var/www/MI_DOMINIO
 ```
 
@@ -172,12 +174,35 @@ sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
 cloudflared --version
 ```
 
-### 1️⃣4️⃣ Login en Cloudflare
+### 1️⃣4️⃣ **Login en Cloudflare**
 
 ```bash
 cloudflared tunnel login
 ```
 Se abrirá una URL → seleccionar dominio → se descargará el certificado .pem.
+
+### 1️⃣5️⃣ **Crear Tunnel**
+
+```bash
+cloudflared tunnel create MI-TUNEL 
+```
+**Guardar el Tunnel UUID.**
+
+### 1️⃣6️⃣ **Configurar cloudflared**
+
+**Crear directorio**
+
+```bash
+mkdir -p ~/.cloudflared
+```
+
+**Crear config**
+
+```bash
+nano ~/.cloudflared/config.yml
+```
+
+
 
 
 
