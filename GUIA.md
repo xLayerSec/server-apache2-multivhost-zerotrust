@@ -18,6 +18,7 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 
 ## 📟 Comandos
 
+---
  
 ### 1️⃣ **Primer acceso como root**
 
