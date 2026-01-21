@@ -4,6 +4,8 @@ Esta guia documenta paso a paso como levantar un servidor apache2 en debian
 12 (sin interfaz grafica) y exponer multiples dominios a internet usando 
 **Cloudflared Zero trust** con un solo tunnel
 
+---
+
 ## Requisitos previos:
 
 - **Debian 12 recien instalado (modo consola)**
@@ -13,6 +15,8 @@ Esta guia documenta paso a paso como levantar un servidor apache2 en debian
 - **Un dominio o varios en cloudflared**
 
 - **Acceso ssh al servidor**
+
+  ---
 
   📜 Documentacion completa: (GUIA.md)
   
