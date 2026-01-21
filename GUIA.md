@@ -51,6 +51,58 @@ usermod -aG sudo TU_USUARIO
 
 ### 3️⃣ **Acceso por SSH**
 
+**Desde otra terminal, ingresamos por SSH con nuestro usuario (ya no root)**
+
+```bash
+ssh TU_USUARIO@IP_DEL_SERVIDOR 
+```
+
+#### 4️⃣ **Instalacion de dependencias basicas**
+
+**Sin ser root solo usaremos sudo con nuestro usuario normal**
+
+```bash
+sudo apt install -y curl wget gnupg2 ca-certificates lsb-release 
+```
+
+### 5️⃣ **Instalacion de Apache2**
+
+```bash
+sudo apt install apache2 -y
+```
+
+**Iniciamos y habilitamos Apache2**
+
+```bash
+sudo service apache2 start
+sudo service apache2 enable
+```
+
+**Verificamos que este corriendo**
+
+```bash
+sudo service apache2 status
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
