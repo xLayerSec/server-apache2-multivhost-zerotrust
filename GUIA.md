@@ -174,21 +174,21 @@ sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
 cloudflared --version
 ```
 
-### 1️⃣4️⃣ **Login en Cloudflare**
+### 1️⃣3️⃣ **Login en Cloudflare**
 
 ```bash
 cloudflared tunnel login
 ```
 Se abrirá una URL → seleccionar dominio → se descargará el certificado .pem.
 
-### 1️⃣5️⃣ **Crear Tunnel**
+### 1️⃣4️⃣ **Crear Tunnel**
 
 ```bash
 cloudflared tunnel create MI-TUNEL 
 ```
 **Guardar el Tunnel UUID.**
 
-### 1️⃣6️⃣ **Configurar cloudflared**
+### 1️⃣5️⃣ **Configurar cloudflared**
 
 **Crear directorio**
 
