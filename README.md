@@ -20,6 +20,7 @@ Esta guia documenta paso a paso como levantar un servidor apache2 en debian
 
 ### 📜 Documentacion completa: (GUIA.md)
   
+---
 
 ⚠️ Todo el contenido de este repositorio tiene fines **educativos** y se
 desarrolla exclusivamente en **entornos controlados y legales**.
