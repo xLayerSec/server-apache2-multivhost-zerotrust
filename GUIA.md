@@ -48,7 +48,7 @@ usermod -aG sudo TU_USUARIO
 **⚠️Cerrar sesion y volver a entrar para que los permisos se apliquen**
 
 ```bash
-exit
+exit | exit
 ```
 
 ### 3️⃣ **Acceso por SSH**
