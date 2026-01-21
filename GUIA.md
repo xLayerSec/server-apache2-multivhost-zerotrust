@@ -18,7 +18,6 @@ a Internet mediante un solo tunnel de Cloudflared Zero Trust
 
 ## 📟 Comandos
 
----
  
 ### 1️⃣ **Primer acceso como root**
 
@@ -31,8 +30,6 @@ su -
 ```bash
 apt update | apt upgrade -y
 ```
-
-----
 
 ### 2️⃣ **Instalacion de sudo**
 
