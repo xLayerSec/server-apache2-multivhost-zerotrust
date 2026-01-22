@@ -193,13 +193,13 @@ cloudflared tunnel create MI-TUNEL
 **Crear directorio**
 
 ```bash
-mkdir -p ~/.cloudflared
+sudo mkdir -p /etc/cloudflared/
 ```
 
 **Crear config**
 
 ```bash
-nano ~/.cloudflared/config.yml
+sudo nano /etc/cloudflared/config.yml
 ```
 
 **Ejemplo:**
@@ -211,15 +211,16 @@ credentials-file: /home/user/.cloudflared/TUNNEL_UUID.json
 
 ingress:
 - hostname: MI_DOMINIO
-service: http://127.0.0.1:80
+  service: http://127.0.0.1:80
+
 - hostname: www.MI_DOMINIO
-service: http://127.0.0.1:80
+  service: http://127.0.0.1:80
 
 - hostname: MI_DOMINIO_2
-service: http://127.0.0.1:80
-- hostname: www.MI_DOMINIO_2
-service: http://127.0.0.1:80
+  service: http://127.0.0.1:80
 
+- hostname: www.MI_DOMINIO_2
+  service: http://127.0.0.1:80
 
 - service: http_status:404
 ```
