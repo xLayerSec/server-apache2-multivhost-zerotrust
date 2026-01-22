@@ -2,4 +2,14 @@
 
 **Este documento registra hallazgos obtenidos mediante tecnicas de reconociemiento ofensivo y las medidas de mitigacion aplicadas.**
 
-### 🔐 Documentacion de seguridad de nuestro servidor apache2 en debian2 con arquitectura zero trust de cloudflared
+---
+
+## 🔐 Documentacion de seguridad de nuestro servidor apache2 en debian2 con arquitectura zero trust de cloudflared
+
+### 1. Informacion General
+
+**Servidor**
+
+- Sistema Operativo: Debian 12
+
+- Servicio Principal 
