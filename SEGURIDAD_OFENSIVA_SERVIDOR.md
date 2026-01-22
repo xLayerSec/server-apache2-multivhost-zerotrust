@@ -12,4 +12,6 @@
 
 - Sistema Operativo: Debian 12
 
-- Servicio Principal 
+- Servicio Principal
+
+- Vector de acceso: Externo (WLAN)
