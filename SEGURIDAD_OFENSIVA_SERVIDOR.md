@@ -11,6 +11,29 @@
 
 - Sistema Operativo: Debian 12
 
-- Servicio Principal
+- Servicio Principal:  Apache2 
 
+- Exposición: Cloudflare Tunnel
+
+- Dominio: https://c8x1v93ka92mlq07qv3h.site/
+  
 - Vector de acceso: Externo (WLAN)
+
+- Uso: Testing
+
+**Objetivo del servidor**
+
+Servidor configurado exclusivamente para pruebas controladas de seguridad y validación de arquitectura Zero Trust mediante Cloudflare Tunnel.
+
+---
+
+### 2. Metodología Utilizada
+
+- Se aplicaron técnicas de reconocimiento ofensivo sin explotación activa
+
+**Tipo de Analisis**
+
+- Reconocimiento pasivo
+- Reconocimiento activo controlado
+
+
