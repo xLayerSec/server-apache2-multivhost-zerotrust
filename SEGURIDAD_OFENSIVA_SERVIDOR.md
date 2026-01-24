@@ -39,13 +39,34 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 **Herrramientas utilizadas**
 
 - ReconLayer (herramienta modular)
+- 
+  modulos pasivos:
+  
+  - Nslookup
+  - Whois dns
+  - Whois ip
+  - Subfinder
+  - Crt.sh
+  - Wayback
 
-- Curl / Wget
+  modulos activos :
 
-- Tecnicas manuales HTTP
+  - WafW00f
+  - Nmap
+  - Whatweb
+  - Nucei
+  - Wpscan
+  - Openssl
+  - FUZZ / Dirb
+
+
+- Curl
+
 
 ### 3. Hallazgos de Seguridad
 
 **🔴 Hallazgo #1: Exposición de Server Status**
+
+
 
 
