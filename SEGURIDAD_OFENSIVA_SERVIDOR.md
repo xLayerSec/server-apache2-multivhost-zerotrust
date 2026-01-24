@@ -72,6 +72,7 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 
 /server-status
 
+
 este endpoint permite visualizar informacion del servidor apache2 como:
 
 
@@ -86,7 +87,8 @@ este endpoint permite visualizar informacion del servidor apache2 como:
 - Facilita fingerprinting del servidor
 - Aumenta superficie de ataque
 - Ataques dirigidos
-- 
+ 
+  
 
 **⚠️Principal factor de filtracion de datos es el "Modo Debug" exponiendo Logs y Errores**
 
@@ -98,6 +100,7 @@ contraseñas
 
 manda todo el objeto del servidor sin filtracion de datos, si  por algun error arrastra datos de sessiones 
 activas o usuarios conectados los datos quedarian expuestos 
+
 
 
 **Nivel de riesgo**
