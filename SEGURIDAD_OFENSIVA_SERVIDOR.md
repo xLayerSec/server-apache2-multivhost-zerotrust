@@ -35,5 +35,17 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 
 - Reconocimiento pasivo
 - Reconocimiento activo controlado
+  
+**Herrramientas utilizadas**
+
+- ReconLayer (herramienta modular)
+
+- Curl / Wget
+
+- Tecnicas manuales HTTP
+
+### 3. Hallazgos de Seguridad
+
+**🔴 Hallazgo #1: Exposición de Server Status**
 
 
