@@ -61,6 +61,8 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 
  - Curl
 
+---
+
 
 ### 3. Hallazgos de Seguridad
 
@@ -96,7 +98,7 @@ activas o usuarios conectados los datos quedarian expuestos
 
 🟠 Medio, con riesgo de escalada dependiendo del contexto
 
-
+---
 
 ### 4. Evidencia de hallazgos
 
@@ -104,7 +106,7 @@ activas o usuarios conectados los datos quedarian expuestos
 **Modulo:** FUFF/DIBR
 **Tecnica:** Enumeracion de rutas comunes
 
-**Resultado observado**
+**Resultados observados**
 
 - El servidor respondio con 200 OK al acceder a /server-status
 - El servidor devolvio un json con los datos del servidor mediante "curl" a /server-status
