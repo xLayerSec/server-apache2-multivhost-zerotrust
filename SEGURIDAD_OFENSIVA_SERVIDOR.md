@@ -49,7 +49,7 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
   - Crt.sh
   - Wayback
 
-  modulos activos :
+  modulos activos:
 
   - WafW00f
   - Nmap
@@ -59,7 +59,7 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
   - Openssl
   - FUZZ / Dirb
 
-  - Curl
+ - Curl
 
 
 ### 3. Hallazgos de Seguridad
