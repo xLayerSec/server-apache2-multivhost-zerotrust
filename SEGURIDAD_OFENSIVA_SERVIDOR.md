@@ -66,11 +66,14 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 
 ### 3. Hallazgos de Seguridad
 
+
 **🟠 Hallazgo #1: Exposición de Server Status**
+
 
 /server-status
 
 este endpoint permite visualizar informacion del servidor apache2 como:
+
 
 - Conexiones activas
 - Rutas solicitadas
@@ -78,10 +81,12 @@ este endpoint permite visualizar informacion del servidor apache2 como:
 - Enumeracion de recursos
 
 **Impacto**
+
 - Filtracion de informacion sensible
 - Facilita fingerprinting del servidor
 - Aumenta superficie de ataque
 - Ataques dirigidos
+- 
 
 **⚠️Principal factor de filtracion de datos es el "Modo Debug" exponiendo Logs y Errores**
 
@@ -94,7 +99,9 @@ contraseñas
 manda todo el objeto del servidor sin filtracion de datos, si  por algun error arrastra datos de sessiones 
 activas o usuarios conectados los datos quedarian expuestos 
 
+
 **Nivel de riesgo**
+
 
 🟠 Medio, con riesgo de escalada dependiendo del contexto
 
