@@ -103,7 +103,9 @@ activas o usuarios conectados los datos quedarian expuestos
 ### 4. Evidencia de hallazgos
 
 **Herramienta:** Reconlayer
+
 **Modulo:** FUFF/DIBR
+
 **Tecnica:** Enumeracion de rutas comunes
 
 **Resultados observados**
