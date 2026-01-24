@@ -39,7 +39,7 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 **Herrramientas utilizadas**
 
 - ReconLayer (herramienta modular)
-- 
+ 
   modulos pasivos:
   
   - Nslookup
