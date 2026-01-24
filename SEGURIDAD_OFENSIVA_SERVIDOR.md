@@ -25,7 +25,7 @@
 
 Servidor configurado exclusivamente para pruebas controladas de seguridad y validación de arquitectura Zero Trust mediante Cloudflare Tunnel.
 
----
+
 
 ### 2. Metodología Utilizada
 
@@ -61,7 +61,6 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
 
  - Curl
 
----
 
 
 ### 3. Hallazgos de Seguridad
@@ -108,7 +107,7 @@ activas o usuarios conectados los datos quedarian expuestos
 
 🟠 Medio, con riesgo de escalada dependiendo del contexto
 
----
+
 
 ### 4. Evidencia de hallazgos
 
@@ -122,6 +121,92 @@ activas o usuarios conectados los datos quedarian expuestos
 
 - El servidor respondio con 200 OK al acceder a /server-status
 - El servidor devolvio un json con los datos del servidor mediante "curl" a /server-status
+
+  
+
+### 5. Analisis de riesgos
+
+
+- Cloudflared no bloquea server-status por defecto
+
+- server-status no aporta funcionalidad en prodcuccion
+
+- Expone informacion innecesaria
+
+**Conclucion:**
+
+
+server-status representa un riesgo sin aportar beneficios reales en este entorno 
+
+
+### 7. Mitigacion aplicada 
+
+**Medida Correctiva**
+
+deshabilitar completamente el modulo status de apache2
+
+**Alternativa**
+
+Restringir el acceso a solo localhost
+
+```bash
+
+<Location "/server-status">
+    SetHandler server-status
+    Require local
+</Location>
+
+```
+
+### 7. Validacion Posterior 
+
+**Se repitió el reconocimiento ofensivo tras la mitigación:**
+
+/server-status ya no responde
+
+Código HTTP: 403 / 404
+
+Reconlayer no vuelve a reportar el hallazgo
+
+✔ Mitigación efectiva confirmada
+
+
+### 7. Proximos pasos
+
+ -Revisar headers HTTP
+
+- Deshabilitar firma del servidor
+
+- Revisar modulos activos de Apache
+
+- Implementar WAF rules en Cloudflare
+
+
+#### 📌 NOTA FINAL
+
+
+**Este documento forma parte de un proceso continuo de mejora de seguridad basado en tecnicas ofensivas**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
