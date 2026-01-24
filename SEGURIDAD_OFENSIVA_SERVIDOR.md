@@ -59,13 +59,66 @@ Servidor configurado exclusivamente para pruebas controladas de seguridad y vali
   - Openssl
   - FUZZ / Dirb
 
-
-- Curl
+  - Curl
 
 
 ### 3. Hallazgos de Seguridad
 
-**🔴 Hallazgo #1: Exposición de Server Status**
+**🟠 Hallazgo #1: Exposición de Server Status**
+
+/server-status
+
+este endpoint permite visualizar informacion del servidor apache2 como:
+
+- Conexiones activas
+- Rutas solicitadas
+- Estado de servicio
+- Enumeracion de recursos
+
+**Impacto**
+- Filtracion de informacion sensible
+- Facilita fingerprinting del servidor
+- Aumenta superficie de ataque
+- Ataques dirigidos
+
+**⚠️Principal factor de filtracion de datos es el "Modo Debug" exponiendo Logs y Errores**
+
+Un error que incluya fragmentos de la memoria o de las ultimas contultas realizadas donde podrian ir usuarios y 
+contraseñas
+
+
+**⚠️Mala implementacion de server-status**
+
+manda todo el objeto del servidor sin filtracion de datos, si  por algun error arrastra datos de sessiones 
+activas o usuarios conectados los datos quedarian expuestos 
+
+**Nivel de riesgo**
+
+🟠 Medio, con riesgo de escalada dependiendo del contexto
+
+
+
+### 4. Evidencia de hallazgos
+
+**Herramienta:** Reconlayer
+**Modulo:** FUFF/DIBR
+**Tecnica:** Enumeracion de rutas comunes
+
+**Resultado observado**
+
+- El servidor respondio con 200 OK al acceder a /server-status
+- El servidor devolvio un json con los datos del servidor mediante "curl" a /server-status
+
+
+
+
+
+
+
+
+
+
+
 
 
 
