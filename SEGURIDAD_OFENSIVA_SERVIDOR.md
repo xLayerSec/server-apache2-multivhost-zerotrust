@@ -173,7 +173,7 @@ Reconlayer no vuelve a reportar el hallazgo
 
 ### 7. Proximos pasos
 
- -Revisar headers HTTP
+- Revisar headers HTTP
 
 - Deshabilitar firma del servidor
 
