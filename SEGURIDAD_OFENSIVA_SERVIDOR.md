@@ -145,6 +145,14 @@ server-status representa un riesgo sin aportar beneficios reales en este entorno
 
 deshabilitar completamente el modulo status de apache2
 
+```bash
+
+sudo a2dismod status
+
+sudo systemctl restart apache2
+
+```
+
 **Alternativa**
 
 Restringir el acceso a solo localhost
